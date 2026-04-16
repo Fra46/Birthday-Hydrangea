@@ -24,7 +24,7 @@
   --input: oklch(0.3 0.05 280);
   --ring: oklch(0.65 0.2 300);
   --radius: 0.75rem;
-  
+
   --hydrangea-light: oklch(0.75 0.15 280);
   --hydrangea-medium: oklch(0.55 0.2 275);
   --hydrangea-dark: oklch(0.4 0.22 270);
@@ -56,11 +56,11 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  
+
   --color-hydrangea-light: var(--hydrangea-light);
   --color-hydrangea-medium: var(--hydrangea-medium);
   --color-hydrangea-dark: var(--hydrangea-dark);
-  
+
   --animate-twinkle: twinkle 3s ease-in-out infinite;
   --animate-fall: fall 10s linear infinite;
   --animate-sway: sway 4s ease-in-out infinite;
@@ -92,7 +92,7 @@
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
+  from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -105,7 +105,7 @@
   * {
     @apply border-border outline-ring/50;
   }
-  
+
   body {
     @apply bg-background text-foreground;
   }
@@ -128,8 +128,9 @@
     animation: var(--animate-glow);
   }
 
+  /* fill-mode forwards so the element stays visible after animation */
   .animate-fade-in-up {
-    animation: var(--animate-fade-in-up);
+    animation: fadeInUp 0.8s ease-out both;
   }
 
   .animate-float {

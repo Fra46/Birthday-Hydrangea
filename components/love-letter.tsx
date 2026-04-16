@@ -46,7 +46,7 @@ export function LoveLetter({ recipientName, content, signature }: LoveLetterProp
           </svg>
         </div>
         <p className="text-muted-foreground italic text-lg">Para</p>
-        <h2 
+        <h2
           className="text-3xl md:text-4xl font-semibold mt-2 gradient-text"
           style={{ fontFamily: "var(--font-script), cursive" }}
         >
@@ -63,11 +63,8 @@ export function LoveLetter({ recipientName, content, signature }: LoveLetterProp
         {paragraphs.map((paragraph, index) => (
           <p
             key={index}
+            style={{ animationDelay: `${index * 0.3 + 0.5}s` }}
             className="animate-fade-in-up"
-            style={{
-              animationDelay: `${index * 0.3 + 0.5}s`,
-              opacity: 0,
-            }}
           >
             {paragraph}
           </p>
