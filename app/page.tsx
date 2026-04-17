@@ -5,6 +5,7 @@ import { FallingPetals } from "@/components/falling-petals"
 import { Hydrangea, HydrangeaBouquet } from "@/components/hydrangea"
 import { BirthdayHeader } from "@/components/birthday-header"
 import { LoveLetter } from "@/components/love-letter"
+import { AudioPlayer } from "@/components/audio-player"
 
 const letterContent = `Desde el fondo de mi corazón, espero que este día sea increíble para ti. Deseo que disfrutes cada segundo junto a tu familia y amigos, celebrando la alegría de tu vida. Le doy gracias a Dios por tu existencia y por permitirme hacer parte en un día tan especial.
 
@@ -77,6 +78,8 @@ export default function BirthdayPage() {
           </div>
         </div>
       </div>
+
+      <AudioPlayer src="/music/birthday.mp3" title="Música de cumpleaños" />
 
       {/* Bottom gradient fade */}
       <div 
