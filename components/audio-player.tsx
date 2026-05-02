@@ -6,8 +6,8 @@ export function AudioPlayer({
   title?: string
 }) {
   return (
-    <div className="fixed bottom-4 left-1/2 z-40 flex w-[min(100vw-1rem,740px)] -translate-x-1/2 flex-col gap-3 rounded-3xl border border-white/20 bg-black/50 p-3 text-white shadow-xl backdrop-blur-md md:left-auto md:right-4 md:translate-x-0 md:flex-row md:items-center">
-      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white">
+    <div className="fixed bottom-4 inset-x-4 z-40 mx-auto flex max-w-[740px] flex-col gap-3 rounded-3xl border border-white/20 bg-black/50 p-3 text-white shadow-xl backdrop-blur-md md:inset-x-auto md:right-4 md:mx-0 md:flex-row md:items-center">
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 text-white">
         <svg
           viewBox="0 0 24 24"
           fill="none"
