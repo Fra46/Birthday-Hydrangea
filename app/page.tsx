@@ -82,8 +82,8 @@ export default function BirthdayPage() {
       <AudioPlayer src="/music/birthday.mp3" title="Música de cumpleaños" />
 
       {/* Bottom gradient fade */}
-      <div 
-        className="fixed bottom-0 left-0 right-0 h-32 pointer-events-none z-30"
+      <div
+        className="fixed bottom-0 left-0 right-0 h-20 pointer-events-none z-30"
         style={{
           background: "linear-gradient(to top, rgba(25, 15, 35, 0.8), transparent)"
         }}
